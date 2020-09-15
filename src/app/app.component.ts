@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-pro';
+
+  createUser(data: any) {
+    console.log(data);
+  }
+
+  loginUser(data: any) {
+    console.log(data);
+  }
 }
