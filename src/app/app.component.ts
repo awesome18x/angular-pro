@@ -1,3 +1,4 @@
+import { User } from './auth-form/auth-form.interface';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,11 +9,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-pro';
 
-  createUser(data: any) {
+  createUser(data: User) {
     console.log(data);
   }
 
-  loginUser(data: any) {
+  loginUser(data: User) {
+    console.log(data);
+  }
+
+  rememberUser(data: boolean) {
     console.log(data);
   }
 }
